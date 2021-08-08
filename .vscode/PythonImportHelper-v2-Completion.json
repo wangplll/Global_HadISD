@@ -1,0 +1,47 @@
+[
+    {
+        "label": "xarray",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xarray",
+        "description": "xarray",
+        "detail": "xarray",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "path0",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "path0 = r\"F:\\data\\data3\\tmean.nc\"\ntmean = xr.open_dataset(path0)\nprint(tmean)",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "tmean",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "tmean = xr.open_dataset(path0)\nprint(tmean)",
+        "detail": "demo",
+        "documentation": {}
+    }
+]
