@@ -29,20 +29,8 @@ def process_missingval(data):
     data_sel = data.where(data.ID.isin(Year_count_gt30.ID.values), drop=True)
     return data_sel
 
+def save_data(data, outputpath, name):
+    data.to_netcdf(outputpath +  "\\" + name)
 
-# In[main]
-if __name__ == '__main__':
-    # Define dataset name
-    dataname = "tmean"
-    filepath = r"F:\data\data3" + "\\" + dataname + ".nc"
-    # Import dataset
-    data = xr.open_dataset(filepath)
-    # Change varible name
-    data = change_varname(data, dataname)
+
     
-    # Add ID
-    ID = np.arange(len(data.lon.values))
-    data = add_coords(data, ID)
-    
-    # Processing missing values
-    data_sel = process_missingval(data)
